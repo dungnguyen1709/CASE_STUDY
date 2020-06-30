@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Game Bầu Cua Cá</title>
+    <link rel="stylesheet" href="css/Hompage.css">
+</head>
+<body>
+<div class="backgroud">
+    <img class="img" src="image/9-6.png">
+    <div class="dice">
+        <img class="bcc" src="image/bcc.png">
+        <img id="dice1" src="image/nai.jpg">
+        <img id="dice2" src="image/cua.jpg">
+        <img id="dice3" src="image/ga.jpg">
+        <img id="imglac" name="imgbtn" src="image/lac.png" onclick="rollDice()"/>
+        <img id="taiLai" src="image/tai_lai.png" onclick="refresh()"/>
+        <img id="continue" src="image/choi_tiep.png" onclick="showCoin()"/>
+    </div>
+    <div class="played">
+        <div class="coindiv">
+            <img id="coin" src="image/coin.png">
+            <p id="money">10000</p>
+            <input id="naptien" type="image" name="imgnapTien" src="image/naptien.png"
+                   onclick="pay_Money()"/>
+        </div>
+        <div>
+            <input id="nai" type="image" src="image/nai.jpg" value="nai" onclick="statusImg(this.value)"/>
+            <input id="cua" type="image" src="image/cua.jpg" value="cua"onclick="statusImg(this.value)"/>
+            <input id="ga" type="image" src="image/ga.jpg" value="ga" onclick="statusImg(this.value)"/>
+            <table class="stakes1">
+                <tr>
+                    <td><p id="stakesNai">0</p></td>
+                    <td><p id="stakesCua">0</p></td>
+                    <td><p id="stakesGa">0</p></td>
+                </tr>
+            </table>
+            <input id="ca" type="image" src="image/ca.jpg" value="ca" onclick="statusImg(this.value)"/>
+            <input id="bau" type="image" src="image/bau.jpg" value="bau" onclick="statusImg(this.value)"/>
+            <input id="tom" type="image" src="image/tom.jpg" value="tom" onclick="statusImg(this.value)"/>
+            <table class="stakes2">
+                <tr>
+                    <td><p id="stakesCa">0</p></td>
+                    <td><p id="stakesBau">0</p></td>
+                    <td><p id="stakesTom">0</p></td>
+                </tr>
+            </table>
+            <div>
+                <input id="chip50" type="image" src="image/chip50.png" onclick="chip1()">
+                <input id="chip100" type="image" src="image/chip100.png" onclick="chip2()"/>
+                <input id="chip200" type="image" src="image/chip200.png" onclick="chip3()"/>
+                <input id="chip500" type="image" src="image/chip500.png" onclick="chip4()"/>
+                <input id="chip1000" type="image" src="image/chip1000.png" onclick="chip5()"/>
+                <input id="chip2000" type="image" src="image/chip2000.png" onclick="chip6()"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/ImageObj.js"></script>
+<script src="js/Dice.js"></script>
+<script src="js/GameBorad.js"></script>
+<script src="js/chip.js"></script>
+<script src="js/TotalMoney.js"></script>
+
+</body>
+</html>
